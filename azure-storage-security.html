@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Azure Storage Security Misconfiguration | Ayomide Adejare</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                AYOMIDE.
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#labs">Labs</a>
+                <a href="index.html#writeups">Write-ups</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Write-up Hero -->
+
+        <section class="project-hero">
+
+            <div class="project-hero-content">
+
+                <p class="project-label">
+                    WRITE-UP 02
+                </p>
+
+                <h1>
+                    Investigating an Azure
+                    Storage Security Misconfiguration
+                </h1>
+
+                <p class="project-intro">
+                    A practical cloud security investigation involving
+                    Azure Policy, identification of a storage
+                    configuration issue, remediation and compliance
+                    verification.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Microsoft Azure</span>
+                    <span>Azure Policy</span>
+                    <span>Cloud Security</span>
+                    <span>Remediation</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Scenario -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>01</span>
+
+                <h2>Security Scenario</h2>
+
+            </div>
+
+            <p>
+                The Azure environment contained a storage resource
+                that was expected to comply with a defined security
+                requirement.
+            </p>
+
+            <p>
+                Azure Policy was used to evaluate the resource and
+                determine whether its configuration met the required
+                security standard.
+            </p>
+
+        </section>
+
+
+        <!-- Detection -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>02</span>
+
+                <h2>Detection</h2>
+
+            </div>
+
+            <div class="case-study-card">
+
+                <h3>Policy Compliance Finding</h3>
+
+                <p>
+                    Azure Policy evaluated the storage resource and
+                    identified it as non-compliant with the security
+                    requirement applied to the environment.
+                </p>
+
+                <br>
+
+                <p>
+                    This provided a clear security finding that could
+                    be investigated and remediated rather than relying
+                    only on manual configuration checks.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Investigation -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>03</span>
+
+                <h2>Investigation</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>01 — Identify</h3>
+
+                    <p>
+                        Reviewed the Azure Policy evaluation to
+                        determine which resource had failed the
+                        security requirement.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>02 — Review</h3>
+
+                    <p>
+                        Examined the storage resource configuration
+                        to understand why it was being evaluated
+                        as non-compliant.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>03 — Remediate</h3>
+
+                    <p>
+                        The identified configuration issue was
+                        corrected so that the resource aligned
+                        with the required security configuration.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>04 — Verify</h3>
+
+                    <p>
+                        The resource was re-evaluated by Azure
+                        Policy to confirm that the remediation
+                        successfully restored compliance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Security Workflow -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>04</span>
+
+                <h2>Security Workflow</h2>
+
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <span>01</span>
+
+                    <p>
+                        Deploy resource
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>02</span>
+
+                    <p>
+                        Apply Azure Policy
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>03</span>
+
+                    <p>
+                        Detect non-compliance
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>04</span>
+
+                    <p>
+                        Remediate configuration
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>05</span>
+
+                    <p>
+                        Verify compliance
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>05</span>
+
+                <h2>Result</h2>
+
+            </div>
+
+            <div class="case-study-card">
+
+                <h3>Compliance Restored</h3>
+
+                <p>
+                    After the configuration was corrected, Azure
+                    Policy re-evaluated the resource and showed
+                    that the storage resource had returned to a
+                    compliant state.
+                </p>
+
+                <br>
+
+                <p>
+                    The exercise demonstrated how policy-based
+                    compliance monitoring can help identify
+                    configuration drift and provide a repeatable
+                    approach to cloud security remediation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Lessons -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>06</span>
+
+                <h2>Key Takeaways</h2>
+
+            </div>
+
+            <div class="learning-content">
+
+                <p>
+                    Cloud security is not only about configuring
+                    resources correctly during deployment.
+                    Continuous monitoring is important because
+                    configurations can change over time.
+                </p>
+
+                <p>
+                    Azure Policy provides a useful mechanism for
+                    evaluating resources against defined security
+                    requirements and highlighting non-compliant
+                    configurations.
+                </p>
+
+                <p>
+                    The most important part of the exercise was
+                    the complete cycle of detection, investigation,
+                    remediation and verification.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Related Project -->
+
+        <section class="case-study-section case-study-footer">
+
+            <h2>
+                Explore the full Azure security lab
+            </h2>
+
+            <p>
+                View the complete implementation, IAM configuration,
+                policy findings and remediation evidence.
+            </p>
+
+            <a
+                href="azure-iam.html"
+                class="case-study-button"
+            >
+                View Azure IAM Case Study →
+            </a>
+
+        </section>
+
+
+        <!-- Back to Write-ups -->
+
+        <section class="case-study-section case-study-footer">
+
+            <a
+                href="index.html#writeups"
+                class="case-study-button"
+            >
+                Back to Write-ups →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

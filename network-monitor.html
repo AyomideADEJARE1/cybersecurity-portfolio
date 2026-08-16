@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Network Health Monitor | Ayomide Adejare</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                AYOMIDE.
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Project Hero -->
+
+        <section class="project-hero">
+
+            <div class="project-hero-content">
+
+                <p class="project-label">
+                    PROJECT 02
+                </p>
+
+                <h1>
+                    Network Health
+                    Monitor
+                </h1>
+
+                <p class="project-intro">
+                    A Python-based network monitoring tool that
+                    evaluates device availability, network latency,
+                    TCP port accessibility and overall network health.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>ICMP</span>
+                    <span>TCP/IP</span>
+                    <span>Network Monitoring</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>01</span>
+
+                <h2>Project Overview</h2>
+
+            </div>
+
+            <p>
+                The Network Health Monitor was built as a practical
+                network engineering and automation project using
+                Python's standard library.
+
+                The tool monitors configured devices, measures
+                network latency, checks TCP port accessibility,
+                classifies device health and records monitoring
+                results for later analysis.
+            </p>
+
+        </section>
+
+
+        <!-- How It Works -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>02</span>
+
+                <h2>How It Works</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>ICMP Monitoring</h3>
+
+                    <p>
+                        Sends four ICMP ping requests to each
+                        configured device and measures response
+                        availability and latency.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>Latency Analysis</h3>
+
+                    <p>
+                        Calculates the average response time
+                        and uses defined thresholds to help
+                        classify network health.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>TCP Port Checks</h3>
+
+                    <p>
+                        Tests the configured TCP port to determine
+                        whether the monitored service is accessible.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>Health Classification</h3>
+
+                    <p>
+                        Classifies devices as HEALTHY, DEGRADED,
+                        POOR or DOWN based on connectivity,
+                        latency and port availability.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Monitoring Workflow -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>03</span>
+
+                <h2>Monitoring Workflow</h2>
+
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <span>01</span>
+
+                    <p>
+                        Read device configuration
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>02</span>
+
+                    <p>
+                        Send ICMP requests
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>03</span>
+
+                    <p>
+                        Check TCP port
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>04</span>
+
+                    <p>
+                        Classify network health
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>05</span>
+
+                    <p>
+                        Log and alert
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Health Classification -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>04</span>
+
+                <h2>Health Classification</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>HEALTHY</h3>
+
+                    <p>
+                        Average latency below 100 ms.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>DEGRADED</h3>
+
+                    <p>
+                        Ping unavailable with the monitored
+                        port open, or latency between 100–199 ms.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>POOR</h3>
+
+                    <p>
+                        Average latency of 200 ms or higher.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>DOWN</h3>
+
+                    <p>
+                        Ping unavailable and the monitored
+                        TCP port is closed.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Example Result -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>05</span>
+
+                <h2>Monitoring Result</h2>
+
+            </div>
+
+            <div class="case-study-card">
+
+                <h3>Network Health Summary</h3>
+
+                <p>
+                    The monitor produces a summary of devices
+                    checked and their corresponding health states,
+                    while also generating alerts for degraded,
+                    poor and unavailable devices.
+                </p>
+
+                <br>
+
+                <p>
+                    Monitoring results are stored in a timestamped
+                    CSV report, providing a simple historical
+                    record of network health observations.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Technical Architecture -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>06</span>
+
+                <h2>Technical Architecture</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>01 — Configuration</h3>
+
+                    <p>
+                        Devices and monitored TCP ports are defined
+                        in a JSON configuration file, making the
+                        monitoring targets easy to modify.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>02 — Network Checks</h3>
+
+                    <p>
+                        The Python monitor performs ICMP connectivity
+                        checks and TCP socket tests to evaluate both
+                        device reachability and service availability.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>03 — Health Engine</h3>
+
+                    <p>
+                        Ping results, latency and TCP port status are
+                        combined to classify each device as HEALTHY,
+                        DEGRADED, POOR or DOWN.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>04 — Output</h3>
+
+                    <p>
+                        Results are displayed to the operator, alerts
+                        are generated when required, and monitoring
+                        data is saved to a CSV report.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Monitoring Evidence -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>07</span>
+
+                <h2>Monitoring Evidence</h2>
+
+            </div>
+
+
+            <!-- Evidence 01 -->
+
+            <div class="evidence-item">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="images/monitor-output.png"
+                        alt="Network Health Monitor terminal output"
+                    >
+
+                </div>
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">01</span>
+
+                    <h3>Live Monitoring Output</h3>
+
+                    <p>
+                        The monitoring tool evaluates configured devices
+                        and reports connectivity status, average latency,
+                        TCP port accessibility and overall health.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Evidence 02 -->
+
+            <div class="evidence-item">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="images/alerts.png"
+                        alt="Network Health Monitor alerts"
+                    >
+
+                </div>
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">02</span>
+
+                    <h3>Network Health Alerts</h3>
+
+                    <p>
+                        The monitor generates alerts when devices are
+                        classified as degraded, poor or down, allowing
+                        potential connectivity issues to be identified
+                        quickly.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Evidence 03 -->
+
+            <div class="evidence-item">
+
+                <div class="evidence-image">
+
+                    <img
+                        src="images/csv-report.png"
+                        alt="Network monitoring CSV report"
+                    >
+
+                </div>
+
+                <div class="evidence-content">
+
+                    <span class="evidence-number">03</span>
+
+                    <h3>Monitoring Report</h3>
+
+                    <p>
+                        Monitoring results are recorded in a timestamped
+                        CSV report, providing a persistent record of
+                        network health observations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- What I Learned -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>08</span>
+
+                <h2>What I Learned</h2>
+
+            </div>
+
+            <div class="learning-content">
+
+                <p>
+                    This project strengthened my understanding of
+                    practical network monitoring and troubleshooting
+                    using Python.
+                </p>
+
+                <p>
+                    I gained hands-on experience working with ICMP
+                    connectivity, TCP sockets, latency measurement,
+                    JSON configuration and CSV-based monitoring logs.
+                </p>
+
+                <p>
+                    I also learned how monitoring systems can combine
+                    multiple signals, such as reachability, latency
+                    and port accessibility, to produce a more useful
+                    assessment of network health.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GitHub -->
+
+        <section class="case-study-section case-study-footer">
+
+            <h2>
+                Explore the implementation
+            </h2>
+
+            <p>
+                View the source code, configuration,
+                documentation and monitoring workflow
+                on GitHub.
+            </p>
+
+            <a
+                href="https://github.com/AyomideADEJARE1/Network-Health-Monitor"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="case-study-button"
+            >
+                View GitHub Repository ↗
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

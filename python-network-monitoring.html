@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Building a Python Network Monitoring Tool | Ayomide Adejare</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                AYOMIDE.
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#labs">Labs</a>
+                <a href="index.html#writeups">Write-ups</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Write-up Hero -->
+
+        <section class="project-hero">
+
+            <div class="project-hero-content">
+
+                <p class="project-label">
+                    WRITE-UP 03
+                </p>
+
+                <h1>
+                    Building a Python
+                    Network Monitoring Tool
+                </h1>
+
+                <p class="project-intro">
+                    A technical breakdown of building a Python-based
+                    network monitoring tool that combines ICMP
+                    connectivity checks, latency measurements and
+                    TCP port testing to evaluate network health.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>ICMP</span>
+                    <span>TCP/IP</span>
+                    <span>Network Monitoring</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Objective -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>01</span>
+
+                <h2>The Objective</h2>
+
+            </div>
+
+            <p>
+                The goal was to build a lightweight network monitoring
+                tool capable of checking multiple devices and producing
+                a useful summary of their current network health.
+            </p>
+
+            <p>
+                Rather than relying on a single connectivity test,
+                the monitor combines device reachability, latency
+                and TCP port accessibility to produce a more useful
+                assessment.
+            </p>
+
+        </section>
+
+
+        <!-- Architecture -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>02</span>
+
+                <h2>Technical Architecture</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>Configuration</h3>
+
+                    <p>
+                        Monitoring targets and TCP ports are stored
+                        in a JSON configuration file so devices can
+                        be added or modified without changing the
+                        core monitoring logic.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>ICMP Checks</h3>
+
+                    <p>
+                        The monitor sends ICMP ping requests to
+                        determine whether configured devices are
+                        reachable and to measure response latency.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>TCP Checks</h3>
+
+                    <p>
+                        TCP socket connections are used to determine
+                        whether the configured service port is
+                        accessible.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>Health Engine</h3>
+
+                    <p>
+                        Connectivity, latency and port results are
+                        combined to classify each monitored device
+                        as HEALTHY, DEGRADED, POOR or DOWN.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Monitoring Workflow -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>03</span>
+
+                <h2>Monitoring Workflow</h2>
+
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <span>01</span>
+
+                    <p>
+                        Load configuration
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>02</span>
+
+                    <p>
+                        Test connectivity
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>03</span>
+
+                    <p>
+                        Measure latency
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>04</span>
+
+                    <p>
+                        Check TCP port
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>05</span>
+
+                    <p>
+                        Classify & record
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Health Classification -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>04</span>
+
+                <h2>Health Classification</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>HEALTHY</h3>
+
+                    <p>
+                        The device is reachable and average
+                        latency remains below the defined
+                        healthy threshold.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>DEGRADED</h3>
+
+                    <p>
+                        Connectivity or latency indicates a
+                        potential performance or availability
+                        concern.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>POOR</h3>
+
+                    <p>
+                        High latency indicates significantly
+                        degraded network performance.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>DOWN</h3>
+
+                    <p>
+                        The device is unavailable and the
+                        monitored service cannot be reached.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Output -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>05</span>
+
+                <h2>Monitoring Output</h2>
+
+            </div>
+
+            <div class="case-study-card">
+
+                <h3>Operational Results</h3>
+
+                <p>
+                    The monitor displays the results of each
+                    device check and provides information about
+                    connectivity, latency, TCP port status and
+                    overall health classification.
+                </p>
+
+                <br>
+
+                <p>
+                    Monitoring results are also stored in a
+                    timestamped CSV report, creating a simple
+                    historical record that can be reviewed later.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Detection & Alerts -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>06</span>
+
+                <h2>Detection & Alerts</h2>
+
+            </div>
+
+            <p>
+                The monitoring logic can identify devices whose
+                network conditions fall outside the expected
+                thresholds.
+            </p>
+
+            <p>
+                Alerts are generated when devices are classified
+                as degraded, poor or down, allowing potential
+                connectivity and performance issues to be
+                identified quickly.
+            </p>
+
+        </section>
+
+
+        <!-- Lessons -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>07</span>
+
+                <h2>Key Takeaways</h2>
+
+            </div>
+
+            <div class="learning-content">
+
+                <p>
+                    Building the monitor reinforced the importance
+                    of combining multiple network signals rather
+                    than relying on a single connectivity check.
+                </p>
+
+                <p>
+                    I gained practical experience working with
+                    Python networking concepts including ICMP
+                    monitoring, TCP sockets and latency measurement.
+                </p>
+
+                <p>
+                    The project also demonstrated how automation
+                    can turn repeated network checks into a
+                    consistent monitoring and reporting process.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Related Project -->
+
+        <section class="case-study-section case-study-footer">
+
+            <h2>
+                Explore the full project
+            </h2>
+
+            <p>
+                View the complete monitoring workflow, technical
+                architecture, evidence and implementation.
+            </p>
+
+            <a
+                href="network-monitor.html"
+                class="case-study-button"
+            >
+                View Network Monitor Case Study →
+            </a>
+
+        </section>
+
+
+        <!-- Back to Write-ups -->
+
+        <section class="case-study-section case-study-footer">
+
+            <a
+                href="index.html#writeups"
+                class="case-study-button"
+            >
+                Back to Write-ups →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

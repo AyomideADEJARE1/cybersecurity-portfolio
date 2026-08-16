@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Network Connectivity Troubleshooting | Ayomide Adejare</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav>
+
+            <a href="index.html" class="logo">
+                AYOMIDE.
+            </a>
+
+            <div class="nav-links">
+
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#labs">Labs</a>
+                <a href="index.html#writeups">Write-ups</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Write-up Hero -->
+
+        <section class="project-hero">
+
+            <div class="project-hero-content">
+
+                <p class="project-label">
+                    WRITE-UP 01
+                </p>
+
+                <h1>
+                    Troubleshooting
+                    Network Connectivity
+                </h1>
+
+                <p class="project-intro">
+                    A practical troubleshooting exercise focused
+                    on diagnosing connectivity problems between
+                    systems and identifying configuration issues
+                    affecting network communication.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Networking</span>
+                    <span>OPNsense</span>
+                    <span>Linux</span>
+                    <span>Troubleshooting</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Problem -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>01</span>
+
+                <h2>The Problem</h2>
+
+            </div>
+
+            <p>
+                The lab environment contained multiple virtual
+                machines connected through an OPNsense firewall.
+                The systems were configured on a private network,
+                but communication between a client and the firewall
+                interface was not working as expected.
+            </p>
+
+            <p>
+                The objective was to determine where connectivity
+                was failing and identify the configuration that
+                prevented the systems from communicating correctly.
+            </p>
+
+        </section>
+
+
+        <!-- Environment -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>02</span>
+
+                <h2>Lab Environment</h2>
+
+            </div>
+
+            <div class="case-study-grid">
+
+                <div class="case-study-card">
+
+                    <h3>OPNsense</h3>
+
+                    <p>
+                        Used as the firewall and network gateway
+                        responsible for routing traffic between
+                        configured interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>Kali Linux</h3>
+
+                    <p>
+                        Used as the client system for testing
+                        connectivity and performing network
+                        troubleshooting.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>VirtualBox</h3>
+
+                    <p>
+                        Provided the virtualized environment in
+                        which the firewall and client systems
+                        were configured.
+                    </p>
+
+                </div>
+
+
+                <div class="case-study-card">
+
+                    <h3>Private Network</h3>
+
+                    <p>
+                        A dedicated private network was used
+                        to allow the virtual machines to
+                        communicate through the firewall.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Troubleshooting Process -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>03</span>
+
+                <h2>Troubleshooting Process</h2>
+
+            </div>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <span>01</span>
+
+                    <p>
+                        Verify interface configuration
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>02</span>
+
+                    <p>
+                        Check IP addressing
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>03</span>
+
+                    <p>
+                        Test connectivity
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>04</span>
+
+                    <p>
+                        Identify configuration issue
+                    </p>
+
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+
+                <div class="workflow-step">
+
+                    <span>05</span>
+
+                    <p>
+                        Verify communication
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Investigation -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>04</span>
+
+                <h2>Investigation</h2>
+
+            </div>
+
+            <div class="learning-content">
+
+                <p>
+                    The first step was to verify the network
+                    interfaces and IP addresses assigned to
+                    each virtual machine.
+                </p>
+
+                <p>
+                    Connectivity tests were then performed
+                    between the client and the OPNsense
+                    interface. The results showed that the
+                    client could communicate with some systems
+                    but could not reach the expected firewall
+                    interface.
+                </p>
+
+                <p>
+                    This narrowed the investigation toward
+                    interface configuration, addressing and
+                    virtual network connectivity rather than
+                    the application layer.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resolution -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>05</span>
+
+                <h2>Resolution</h2>
+
+            </div>
+
+            <div class="case-study-card">
+
+                <h3>Configuration Verification</h3>
+
+                <p>
+                    The virtual network configuration and
+                    interface assignments were reviewed and
+                    corrected where necessary.
+                </p>
+
+                <br>
+
+                <p>
+                    Connectivity was then tested again to
+                    verify that the client could communicate
+                    with the expected network interface.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Lessons -->
+
+        <section class="case-study-section">
+
+            <div class="case-study-heading">
+
+                <span>06</span>
+
+                <h2>Key Takeaways</h2>
+
+            </div>
+
+            <div class="learning-content">
+
+                <p>
+                    Network troubleshooting should begin with
+                    the fundamentals: interfaces, addressing,
+                    routing and connectivity.
+                </p>
+
+                <p>
+                    Testing connectivity step by step makes it
+                    easier to isolate the layer at which a
+                    problem is occurring instead of changing
+                    multiple configurations at once.
+                </p>
+
+                <p>
+                    This exercise reinforced the importance of
+                    understanding how virtual network adapters,
+                    firewall interfaces and IP addressing work
+                    together in a lab environment.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Back to Write-ups -->
+
+        <section class="case-study-section case-study-footer">
+
+            <h2>
+                More technical write-ups
+            </h2>
+
+            <p>
+                Explore more practical investigations and
+                technical documentation from my cybersecurity
+                labs and projects.
+            </p>
+
+            <a
+                href="index.html#writeups"
+                class="case-study-button"
+            >
+                Back to Write-ups →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
